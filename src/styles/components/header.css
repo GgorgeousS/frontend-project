@@ -1,0 +1,28 @@
+.header {
+  display: flex;
+  font-size: 16px;
+  font-family: 'Leifa';
+  background-color: white;
+  padding: 10px;
+  align-items: center;
+}
+
+.header__logo {
+  display: flex;
+  color: black;
+  font-weight: bold;
+  font-size: 24px;
+  justify-content: space-between;
+  column-gap: 10px;
+  width=: 34px;
+}
+
+.header__menu {
+  display: flex;
+  column-gap: 20px;
+  color: black;
+  gap: 20px;
+  font-family: 'Arial';
+  padding-left: 40px;
+  padding-right: 450px;
+}

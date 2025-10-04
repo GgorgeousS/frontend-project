@@ -1,0 +1,18 @@
+.page {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-color: #052825;
+}
+
+.page__header {
+  flex-shrink: 0; /*запрещаем уменьшатся */
+  background-color: white;
+}
+.page__content {
+  flex-grow: 1; /*займи все доступное пространство*/
+}
+
+.page__footer {
+  flex-shrink: 0; /*запрещаем уменьшатся*/
+}

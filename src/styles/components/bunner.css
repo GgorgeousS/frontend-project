@@ -1,0 +1,55 @@
+.bunner__content {
+  padding-top: 134px;
+}
+
+.bunner__info h1 {
+  font-size: 64px;
+  font-weight: bold;
+  line-height: 1;
+  font-family: sans-serif;
+}
+
+.bunner__info p {
+  padding-top: 31px;
+  line-height: 1.25;
+  font-style: italic;
+  font-size: 24px;
+  font-weight: lighter;
+}
+
+.bunner__profile {
+  display: flex;
+  justify-content: flex-start;
+  padding-top: 36px;
+}
+
+.bunner__profile img {
+  height: 90px;
+}
+
+.bunner__profile-text {
+  display: inline-block;
+  font-size: 18px;
+  padding: 15px;
+}
+
+.bunner__button {
+  padding-top: 36px;
+}
+.bunner__meeting-btn {
+  display: flex;
+  background-color: #2e4fd7;
+  font-size: 14px;
+  border-radius: 1px;
+  padding: 5px 20px;
+  border-radius: 1px;
+  align-items: center;
+  min-width: 262px;
+  min-height: 56px;
+  justify-content: center;
+}
+
+.btn-icon {
+  height: 10px;
+  margin: 7px;
+}

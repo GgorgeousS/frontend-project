@@ -1,0 +1,28 @@
+.section-3 {
+  display: flex;
+  background-color: white;
+  justify-content: center;
+  padding-bottom: 128px;
+  gap: 30px;
+  padding-top: 84px;
+}
+
+.section-3-title {
+  line-height: 1.15;
+  font-size: 48px;
+  color: #333;
+  padding-bottom: 66px;
+}
+
+.section-3-name {
+  font-weight: bold;
+  color: black;
+  font-size: 28px;
+}
+
+.section-3-description {
+  color: #666;
+  line-height: 1.6;
+  margin-bottom: 30px;
+  font-size: 16px;
+}

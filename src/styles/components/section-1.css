@@ -1,0 +1,73 @@
+.section-1 {
+  font-family: 'Arial';
+}
+
+.section-1 h1 {
+  font-weight: bold;
+  line-height: 1.25;
+  padding-top: 122px;
+  font-size: 48px;
+  text-align: center;
+}
+
+.section-1__card {
+  display: flex;
+  gap: 30px;
+  padding-top: 30px;
+  justify-content: center;
+}
+
+.card {
+  display: flex;
+  width: 350px;
+  height: 354px;
+  background-color: white;
+}
+
+.card__info {
+  max-width: 400px;
+  width: 100%;
+  background-color: white;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  padding: 40px 30px;
+}
+
+.card-title {
+  font-size: 24px;
+  font-weight: 700;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.card-description {
+  color: #666;
+  line-height: 1.6;
+  margin-bottom: 30px;
+  font-size: 16px;
+}
+
+.explore-button {
+  display: inline-block;
+  color: blue;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: 200;
+}
+
+.card__logo {
+  padding-bottom: 56px;
+}
+
+.btn-section {
+  display: flex;
+  justify-content: center;
+  padding-top: 38px;
+  padding-bottom: 38px;
+}
+
+.btn-section-1 {
+  border: 2;
+  padding: 15px 25px 15px 25px;
+  text-align: center;
+}

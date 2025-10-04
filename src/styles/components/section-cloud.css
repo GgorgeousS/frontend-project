@@ -1,0 +1,35 @@
+.section-cloud {
+  display: flex;
+  background-color: white;
+  padding-bottom: 132px;
+  justify-content: center;
+}
+
+.section-cloud__info {
+  padding-right: 100px;
+}
+
+.cloud-title {
+  font-size: 48px;
+  line-height: 1.25;
+  font-weight: 700;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.cloud-discription {
+  color: #666;
+  line-height: 1.6;
+  margin-bottom: 30px;
+  font-size: 16px;
+}
+
+.cloud__logo {
+  display: flex;
+  gap: 80px;
+  padding: 20px;
+}
+
+.section-cloud__logo img {
+  max-width: 100px;
+}

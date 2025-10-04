@@ -1,0 +1,15 @@
+.btn {
+  display: flex;
+  background-color: #2e4fd7;
+  font-size: 14px;
+  border-radius: 1px;
+  padding: 5px 20px;
+  border-radius: 1px;
+  align-items: center;
+  border: none;
+}
+
+.btn-icon {
+  height: 10px;
+  margin: 7px;
+}

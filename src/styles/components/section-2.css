@@ -1,0 +1,42 @@
+.section-2 {
+  display: flex;
+  background-color: white;
+  justify-content: center;
+  padding-bottom: 132px;
+}
+
+.section-2 h1 {
+  font-weight: bold;
+  line-height: 1.25;
+  padding-top: 122px;
+  font-size: 48px;
+  color: black;
+}
+
+.line {
+  display: flex;
+  gap: 30px;
+  padding-top: 30px;
+  justify-content: center;
+  color: black;
+  padding-right: 30px;
+}
+
+.section-2__line {
+  display: flex;
+  padding-top: 38px;
+  justify-content: space-between;
+}
+
+.line-title {
+  font-size: 24px;
+  font-weight: 700;
+  color: #333;
+  padding-bottom: 10px;
+}
+
+.line-description {
+  color: #666;
+  line-height: 1.6;
+  font-size: 16px;
+}
