@@ -1,0 +1,32 @@
+.section-cta {
+  background-color: #e7ebfc;
+  text-align: center;
+  padding-top: 115px;
+  padding-bottom: 114px;
+}
+
+.section-cta h1 {
+  font-weight: bold;
+  line-height: 1.25;
+  font-size: 48px;
+  color: black;
+  padding-bottom: 24px;
+}
+
+.section-cta p {
+  font-size: 24px;
+  color: #000000;
+  line-height: 1.5;
+}
+
+.button-cta {
+  display: flex;
+  justify-content: center;
+  padding-top: 57px;
+}
+
+.btn-cta {
+  text-align: center;
+  padding: 15px 25px;
+  background-color: #2e4fd7;
+}

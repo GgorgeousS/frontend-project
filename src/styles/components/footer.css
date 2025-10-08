@@ -1,0 +1,56 @@
+.page__footer {
+  background-color: #052825;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer__info {
+  padding-top: 70px;
+}
+
+.footer__info p {
+  padding-bottom: 10px;
+}
+
+.footer-title {
+  font-weight: bold;
+  font-size: 24px;
+  padding-bottom: 33px;
+}
+
+.footer-about {
+  font-size: 18px;
+  padding-bottom: 6px;
+}
+
+.btn-footer {
+  border: none;
+  padding: 10px 0px 10px 0px;
+}
+
+.footer__menu__info {
+  display: flex;
+  gap: 28px;
+  padding: 20px;
+  justify-content: flex-end;
+}
+
+.footer__menu {
+  padding-top: 70px;
+}
+
+.footer__end {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 30px;
+  padding-bottom: 44px;
+}
+
+hr {
+  margin-top: 22px;
+  border: none;
+  border-top: 0.5px solid #09413b;
+}
