@@ -1,0 +1,49 @@
+.section-meet {
+  background-color: white;
+}
+
+.section-meet__card {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 132px;
+  gap: 30px;
+  color: black;
+}
+
+.section-meet h1 {
+  font-weight: bold;
+  line-height: 1.25;
+  font-size: 48px;
+  color: black;
+  padding-bottom: 60px;
+  padding-top: 60px;
+  text-align: center;
+}
+
+.meet-block {
+  width: 255px;
+  height: 255px;
+  background-color: #e7ebfc;
+}
+
+.meet-name {
+  font-size: 24px;
+  font-weight: 700;
+  color: #333;
+  padding-bottom: 10px;
+  line-height: 1;
+  padding-top: 24px;
+}
+
+.meet-post {
+  line-height: 1;
+  color: #666;
+  font-size: 16px;
+}
+
+.meet-ico {
+  display: flex;
+  justify-content: flex-start;
+  gap: 8px;
+  padding-top: 15px;
+}
