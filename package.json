@@ -29,6 +29,7 @@
     "vite": "^7.1.2"
   },
   "dependencies": {
-    "express": "^5.1.0"
+    "express": "^5.1.0",
+    "uv": "^1.4.0"
   }
 }

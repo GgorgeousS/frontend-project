@@ -17,20 +17,28 @@
     <div class="page">
       <header class="page__header">
         <div class="container">
-          <div class="header vw-100">
+          <div class="header">
             <div class="header__logo">
               <img src="/images/logo.svg" alt="" />
               <p>Tweakful</p>
             </div>
+            <button class="burger" id="burger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
 
-            <ul class="header__menu">
-              <li><a href="#" class="nav-link px-2">Home</a></li>
-              <li><a href="#" class="nav-link px-2">Features</a></li>
-              <li><a href="#" class="nav-link px-2">Pricing</a></li>
-              <li><a href="#" class="nav-link px-2">About Us</a></li>
-              <li><a href="#" class="nav-link px-2">Help</a></li>
-            </ul>
-            <button type="button" class="btn">Book A Meeting →</button>
+                <ul class="header__menu" id="menu">
+                    <li><a href="#" class="nav-link px-2">Home</a></li>
+                    <li><a href="#" class="nav-link px-2">Features</a></li>
+                    <li><a href="#" class="nav-link px-2">Pricing</a></li>
+                    <li><a href="#" class="nav-link px-2">About Us</a></li>
+                    <li><a href="#" class="nav-link px-2">Help</a></li>
+                    <button type="button" class="btn">Book A Meeting →</button>
+                </ul>
+
+                <div class="menu-overlay" id="overlay"></div>
+
           </div>
         </div>
       </header>
@@ -39,20 +47,20 @@
           <div class="bunner">
             <div class="bunner__content">
               <div class="bunner__info">
-                <h1>
+                <h1 class="bunner__title">
                   This headline is the gist of<br />
                   the Your whole Website That<br />
                   can Either Make Or Break
                 </h1>
-                <p>
+                <p class="bunner__discription">
                   “E-commerce shipping Pack collects different ways to do quick shopping, pay in a<br />
                   second, and get all those stuff you need. There are smart delivery and polite<br />
                   service in the scenes. Each of them is realized in cold and warm colors with
                 </p>
               </div>
               <div class="bunner__profile">
-                <img src="public\images\prof.png" alt="" />
-                <div class="bunner__profile-text">
+                <img class="bunner__profile__img" src="public\images\prof.png" alt="" />
+                <div class="bunner__profile__text">
                   <b>Jesica Kumari</b>
                   <p>CEO Of Acme Limited</p>
                 </div>
@@ -63,8 +71,8 @@
             </div>
           </div>
         </div>
-        <div class="section-1">
-          <h1>
+        <div class="section-1 container">
+          <h1 class="section-1__title">
             Solutions that connect you to <br />
             your Prospects & Clients
           </h1>
@@ -72,8 +80,8 @@
             <div class="card">
               <div class="card__info">
                 <img class="card__logo" src="public\images\1.svg" alt="" />
-                <h2 class="card-title">Mobile Application</h2>
-                <p class="card-description">
+                <h2 class="card__title">Mobile Application</h2>
+                <p class="card__description">
                   Lorem ipsum dolor amet, consectetur adipiscing elit. Mattis et sed nam sem tellus erat.
                 </p>
                 <a href="#" class="explore-button">Explore →</a>
@@ -82,8 +90,8 @@
             <div class="card">
               <div class="card__info">
                 <img class="card__logo" src="public\images\2.svg" alt="" />
-                <h2 class="card-title">Web Application</h2>
-                <p class="card-description">
+                <h2 class="card__title">Web Application</h2>
+                <p class="card__description">
                   Lorem ipsum dolor amet, consectetur adipiscing elit. Mattis et sed nam sem tellus erat.
                 </p>
                 <a href="#" class="explore-button">Explore →</a>
@@ -92,8 +100,8 @@
             <div class="card">
               <div class="card__info">
                 <img class="card__logo" src="public\images\3.svg" alt="" />
-                <h2 class="card-title">User Interface Design</h2>
-                <p class="card-description">
+                <h2 class="card__title">User Interface Design</h2>
+                <p class="card__description">
                   Lorem ipsum dolor amet, consectetur adipiscing elit. Mattis et sed nam sem tellus erat.
                 </p>
                 <a href="#" class="explore-button">Explore →</a>
@@ -104,8 +112,8 @@
             <div class="card">
               <div class="card__info">
                 <img class="card__logo" src="public\images\4.svg" alt="" />
-                <h2 class="card-title">Strategy and Branding</h2>
-                <p class="card-description">
+                <h2 class="card__title">Strategy and Branding</h2>
+                <p class="card__description">
                   Lorem ipsum dolor amet, consectetur adipiscing elit. Mattis et sed nam sem tellus erat.
                 </p>
                 <a href="#" class="explore-button">Explore →</a>
@@ -114,8 +122,8 @@
             <div class="card">
               <div class="card__info">
                 <img class="card__logo" src="public\images\5.svg" alt="" />
-                <h2 class="card-title">Performance Marketing</h2>
-                <p class="card-description">
+                <h2 class="card__title">Performance Marketing</h2>
+                <p class="card__description">
                   Lorem ipsum dolor amet, consectetur adipiscing elit. Mattis et sed nam sem tellus erat.
                 </p>
                 <a href="#" class="explore-button">Explore →</a>
@@ -124,8 +132,8 @@
             <div class="card">
               <div class="card__info">
                 <img class="card__logo" src="public\images\6.svg" alt="" />
-                <h2 class="card-title">Project Management</h2>
-                <p class="card-description">
+                <h2 class="card__title">Project Management</h2>
+                <p class="card__description">
                   Lorem ipsum dolor amet, consectetur adipiscing elit. Mattis et sed nam sem tellus erat.
                 </p>
                 <a href="#" class="explore-button">Explore →</a>
@@ -133,11 +141,12 @@
             </div>
           </div>
           <div class="btn-section">
-            <button class="btn-section-1">Button Text →</button>
+            <button class="section-1__btn">Button Text →</button>
           </div>
         </div>
-        <div class="section-2">
-          <div>
+        <div class="section-2 ">
+          <div class="container">
+            <div>
             <h1>Benefits of working with us</h1>
             <div class="section-2__line">
               <div class="line">
@@ -192,147 +201,154 @@
               </div>
             </div>
           </div>
+          </div>
         </div>
         <div class="section-3">
+          <div class="section-3 container">
           <img src="public\images\left.svg" alt="" />
           <div class="section-3__img">
-            <img src="public\images\Rectangle.svg" alt="" />
+            <img class="section-3__img__img" src="public\images\Rectangle.svg" alt="" />
           </div>
           <div class="section-3__info">
-            <h2 class="section-3-title">
+            <h2 class="section-3__title">
               There are smart delivery<br />
               and polite service in the<br />
               scenes. Each of them is<br />
               realized in cold and warm<br />
               colors with sky.
             </h2>
-            <img src="public\images\logitech.svg" alt="" />
-            <p class="section-3-name">David Gillroy</p>
-            <p class="section-3-description">Digital Artist at Digital Group</p>
+            <img class="section-3__info__img" src="public\images\logitech.svg" alt="" />
+            <p class="section-3__name">David Gillroy</p>
+            <p class="section-3__description">Digital Artist at Digital Group</p>
           </div>
           <img src="public\images\right.svg" alt="" />
+          </div>
+
         </div>
-        <div class="section-cloud">
+        <div class="section-cloud ">
+          <div class="section-cloud container">
           <div class="section-cloud__info">
-            <h1 class="cloud-title">1,500+</h1>
-            <p class="cloud-discription">
+            <h1 class="cloud__title">1,500+</h1>
+            <p class="cloud__discription">
               Customers who have used Tweakful<br />
               engagement design approach
             </p>
           </div>
           <div class="section-cloud__logo">
             <div class="cloud__logo">
-              <img src="public\images\Airbnb.svg" alt="" />
-              <img src="public\images\Amazon.svg" alt="" />
-              <img src="public\images\FedEx.svg" alt="" />
-              <img src="public\images\Microsoft.svg" alt="" />
+              <img class="section-cloud__img" src="public\images\Airbnb.svg" alt="" />
+              <img class="section-cloud__img" src="public\images\Amazon.svg" alt="" />
+              <img class="section-cloud__img" src="public\images\FedEx.svg" alt="" />
+              <img class="section-cloud__img" src="public\images\Microsoft.svg" alt="" />
             </div>
             <div class="cloud__logo">
-              <img src="public\images\Google.svg" alt="" />
-              <img src="public\images\ola.svg" alt="" />
-              <img src="public\images\Walmart.svg" alt="" />
-              <img src="public\images\OYO.svg" alt="" />
+              <img class="section-cloud__img" src="public\images\Google.svg" alt="" />
+              <img class="section-cloud__img" src="public\images\ola.svg" alt="" />
+              <img class="section-cloud__img" src="public\images\Walmart.svg" alt="" />
+              <img class="section-cloud__img" src="public\images\OYO.svg" alt="" />
             </div>
           </div>
         </div>
+        </div>
+        
         <div class="section-meet">
-          <h1 class="meet-title">Meet Our Teammates</h1>
+          <h1 class="meet__title">Meet Our Teammates</h1>
           <div class="section-meet__card">
-            <div class="meet-card">
-              <div class="meet-block"></div>
-              <div class="meet-info">
-                <h2 class="meet-name">Samuel Willson</h2>
-                <p class="meet-post">Digital Artist</p>
-                <div class="meet-ico">
-                  <img src="public\images\in.svg" alt="" />
-                  <img src="public\images\g.svg" alt="" />
-                  <img src="public\images\twit.png" alt="" />
+            <div class="meet__card">
+              <div class="meet__block"></div>
+              <div class="meet__info">
+                <h2 class="meet__name">Samuel Willson</h2>
+                <p class="meet__post">Digital Artist</p>
+                <div class="meet__ico">
+                  <img class="meet__ico__img" src="public\images\in.svg" alt="" />
+                  <img class="meet__ico__img" src="public\images\g.svg" alt="" />
+                  <img class="meet__ico__img" src="public\images\twit.png" alt="" />
                 </div>
               </div>
             </div>
-            <div class="meet-card">
-              <div class="meet-block"></div>
-              <div class="meet-info">
-                <h2 class="meet-name">Angelina Hellhop</h2>
-                <p class="meet-post">Digital Artist</p>
-                <div class="meet-ico">
-                  <img src="public\images\in.svg" alt="" />
-                  <img src="public\images\g.svg" alt="" />
-                  <img src="public\images\twit.png" alt="" />
+            <div class="meet__card">
+              <div class="meet__block"></div>
+              <div class="meet__info">
+                <h2 class="meet__name">Angelina Hellhop</h2>
+                <p class="meet__post">Digital Artist</p>
+                <div class="meet__ico">
+                  <img class="meet__ico__img" src="public\images\in.svg" alt="" />
+                  <img class="meet__ico__img" src="public\images\g.svg" alt="" />
+                  <img class="meet__ico__img" src="public\images\twit.png" alt="" />
                 </div>
               </div>
             </div>
-            <div class="meet-card">
-              <div class="meet-block"></div>
-              <div class="meet-info">
-                <h2 class="meet-name">Kyle Generale</h2>
-                <p class="meet-post">Digital Artist</p>
-                <div class="meet-ico">
-                  <img src="public\images\in.svg" alt="" />
-                  <img src="public\images\g.svg" alt="" />
-                  <img src="public\images\twit.png" alt="" />
+            <div class="meet__card">
+              <div class="meet__block"></div>
+              <div class="meet__info">
+                <h2 class="meet__name">Kyle Generale</h2>
+                <p class="meet__post">Digital Artist</p>
+                <div class="meet__ico">
+                  <img class="meet__ico__img" src="public\images\in.svg" alt="" />
+                  <img class="meet__ico__img" src="public\images\g.svg" alt="" />
+                  <img class="meet__ico__img" src="public\images\twit.png" alt="" />
                 </div>
               </div>
             </div>
-            <div class="meet-card">
-              <div class="meet-block"></div>
-              <div class="meet-info">
-                <h2 class="meet-name">Joey Taylor</h2>
-                <p class="meet-post">Digital Artist</p>
-                <div class="meet-ico">
-                  <img src="public\images\in.svg" alt="" />
-                  <img src="public\images\g.svg" alt="" />
-                  <img src="public\images\twit.png" alt="" />
+            <div class="meet__card">
+              <div class="meet__block"></div>
+              <div class="meet__info">
+                <h2 class="meet__name">Joey Taylor</h2>
+                <p class="meet__post">Digital Artist</p>
+                <div class="meet__ico">
+                  <img class="meet__ico__img" src="public\images\in.svg" alt="" />
+                  <img class="meet__ico__img" src="public\images\g.svg" alt="" />
+                  <img class="meet__ico__img" src="public\images\twit.png" alt="" />
                 </div>
               </div>
             </div>
           </div>
           <div class="section-meet__card">
-            <div class="meet-card">
-              <div class="meet-block"></div>
-              <div class="meet-info">
-                <h2 class="meet-name">Samuel Willson</h2>
-                <p class="meet-post">Digital Artist</p>
-                <div class="meet-ico">
-                  <img src="public\images\in.svg" alt="" />
-                  <img src="public\images\g.svg" alt="" />
-                  <img src="public\images\twit.png" alt="" />
+            <div class="meet__card">
+              <div class="meet__block"></div>
+              <div class="meet__info">
+                <h2 class="meet__name">Samuel Willson</h2>
+                <p class="meet__post">Digital Artist</p>
+                <div class="meet__ico">
+                  <img class="meet__ico__img" src="public\images\in.svg" alt="" />
+                  <img class="meet__ico__img" src="public\images\g.svg" alt="" />
+                  <img class="meet__ico__img" src="public\images\twit.png" alt="" />
                 </div>
               </div>
             </div>
-            <div class="meet-card">
-              <div class="meet-block"></div>
-              <div class="meet-info">
-                <h2 class="meet-name">Angelina Hellhop</h2>
-                <p class="meet-post">Digital Artist</p>
-                <div class="meet-ico">
-                  <img src="public\images\in.svg" alt="" />
-                  <img src="public\images\g.svg" alt="" />
-                  <img src="public\images\twit.png" alt="" />
+            <div class="meet__card">
+              <div class="meet__block"></div>
+              <div class="meet__info">
+                <h2 class="meet__name">Angelina Hellhop</h2>
+                <p class="meet__post">Digital Artist</p>
+                <div class="meet__ico">
+                  <img class="meet__ico__img" src="public\images\in.svg" alt="" />
+                  <img class="meet__ico__img" src="public\images\g.svg" alt="" />
+                  <img class="meet__ico__img" src="public\images\twit.png" alt="" />
                 </div>
               </div>
             </div>
-            <div class="meet-card">
-              <div class="meet-block"></div>
-              <div class="meet-info">
-                <h2 class="meet-name">Kyle Generale</h2>
-                <p class="meet-post">Digital Artist</p>
-                <div class="meet-ico">
-                  <img src="public\images\in.svg" alt="" />
-                  <img src="public\images\g.svg" alt="" />
-                  <img src="public\images\twit.png" alt="" />
+            <div class="meet__card">
+              <div class="meet__block"></div>
+              <div class="meet__info">
+                <h2 class="meet__name">Kyle Generale</h2>
+                <p class="meet__post">Digital Artist</p>
+                <div class="meet__ico">
+                  <img class="meet__ico__img" src="public\images\in.svg" alt="" />
+                  <img class="meet__ico__img" src="public\images\g.svg" alt="" />
+                  <img class="meet__ico__img" src="public\images\twit.png" alt="" />
                 </div>
               </div>
             </div>
-            <div class="meet-card">
-              <div class="meet-block"></div>
-              <div class="meet-info">
-                <h2 class="meet-name">Joey Taylor</h2>
-                <p class="meet-post">Digital Artist</p>
-                <div class="meet-ico">
-                  <img src="public\images\in.svg" alt="" />
-                  <img src="public\images\g.svg" alt="" />
-                  <img src="public\images\twit.png" alt="" />
+            <div class="meet__card">
+              <div class="meet__block"></div>
+              <div class="meet__info">
+                <h2 class="meet__name">Joey Taylor</h2>
+                <p class="meet__post">Digital Artist</p>
+                <div class="meet__ico">
+                  <img class="meet__ico__img" src="public\images\in.svg" alt="" />
+                  <img class="meet__ico__img" src="public\images\g.svg" alt="" />
+                  <img class="meet__ico__img" src="public\images\twit.png" alt="" />
                 </div>
               </div>
             </div>

@@ -2,14 +2,14 @@
   padding-top: 134px;
 }
 
-.bunner__info h1 {
+.bunner__title {
   font-size: 64px;
   font-weight: bold;
   line-height: 1;
   font-family: sans-serif;
 }
 
-.bunner__info p {
+.bunner__discription {
   padding-top: 31px;
   line-height: 1.25;
   font-style: italic;
@@ -23,11 +23,11 @@
   padding-top: 36px;
 }
 
-.bunner__profile img {
+.bunner__profile__img {
   height: 90px;
 }
 
-.bunner__profile-text {
+.bunner__profile__text {
   display: inline-block;
   font-size: 18px;
   padding: 15px;
@@ -52,4 +52,20 @@
 .btn-icon {
   height: 10px;
   margin: 7px;
+}
+
+@media (max-width: 1024px) {
+  .bunner__title {
+    font-size: 48px;
+  }
+
+  .bunner__discription {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 768px) {
+}
+
+@media (max-width: 480px) {
 }
