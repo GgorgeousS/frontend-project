@@ -6,15 +6,16 @@
 }
 
 .page__header {
-  flex-shrink: 0; /*запрещаем уменьшатся */
+  flex-shrink: 0; /* запрещаем уменьшатся */
   background-color: var(--bg-primary);
 }
+
 .page__content {
-  flex-grow: 1; /*займи все доступное пространство*/
+  flex-grow: 1; /* займи все доступное пространство */
 }
 
 .page__footer {
-  flex-shrink: 0; /*запрещаем уменьшатся*/
+  flex-shrink: 0; /* запрещаем уменьшатся */
 }
 
 .theme-toggle {

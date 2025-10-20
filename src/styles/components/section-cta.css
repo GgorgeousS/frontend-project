@@ -32,7 +32,7 @@
 }
 
 /* Адаптация для планшетов */
-@media (max-width: 1024px) {
+@media (width <= 1024px) {
   .section-cta {
     padding-top: 80px;
     padding-bottom: 80px;
@@ -63,7 +63,7 @@
 }
 
 /* Адаптация для мобильных устройств */
-@media (max-width: 768px) {
+@media (width <= 768px) {
   .section-cta {
     padding-top: 60px;
     padding-bottom: 60px;
@@ -103,7 +103,7 @@
 }
 
 /* Адаптация для маленьких мобильных устройств */
-@media (max-width: 480px) {
+@media (width <= 480px) {
   .section-cta {
     padding-top: 50px;
     padding-bottom: 50px;
@@ -135,7 +135,7 @@
 }
 
 /* Адаптация для очень маленьких экранов */
-@media (max-width: 360px) {
+@media (width <= 360px) {
   .section-cta {
     padding-top: 40px;
     padding-bottom: 40px;

@@ -41,7 +41,7 @@
   font-size: 16px;
 }
 
-@media (max-width: 1024px) {
+@media (width <= 1024px) {
   .section-2 {
     padding-bottom: 100px;
   }
@@ -82,7 +82,7 @@
   }
 }
 
-@media (max-width: 768px) {
+@media (width <= 768px) {
   .section-2 {
     padding-bottom: 80px;
   }
@@ -124,7 +124,7 @@
   }
 }
 
-@media (max-width: 480px) {
+@media (width <= 480px) {
   .section-2 {
     padding-bottom: 60px;
   }
@@ -161,7 +161,7 @@
   }
 }
 
-@media (max-width: 360px) {
+@media (width <= 360px) {
   .section-2 h1 {
     font-size: 24px;
   }
