@@ -28,7 +28,6 @@
   display: flex;
   column-gap: 20px;
   background-color: var(--bg-primary);
-  gap: 15px;
   font-family: Arial, sans-serif;
   align-items: center;
 }
