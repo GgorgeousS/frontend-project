@@ -1,3 +1,5 @@
+/* global localStorage */
+
 import './index.css';
 document.addEventListener('DOMContentLoaded', function () {
   const burger = document.getElementById('burger');
