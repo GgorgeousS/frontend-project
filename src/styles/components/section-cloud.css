@@ -1,6 +1,6 @@
 .section-cloud {
   display: flex;
-  background-color: white;
+  background-color: var(--bg-primary);
   padding-bottom: 132px;
   justify-content: center;
 }
@@ -13,12 +13,12 @@
   font-size: 40px;
   line-height: 1.25;
   font-weight: 700;
-  color: #333;
+  color: var(--text-h1);
   margin-bottom: 20px;
 }
 
 .cloud__discription {
-  color: #666;
+  color: var(--text-disc);
   line-height: 1.6;
   margin-bottom: 30px;
   font-size: 16px;

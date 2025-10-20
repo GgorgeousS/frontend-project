@@ -1,6 +1,6 @@
 .section-3 {
   display: flex;
-  background-color: white;
+  background-color: var(--bg-primary);
   justify-content: center;
   padding-bottom: 128px;
   gap: 30px;
@@ -10,14 +10,14 @@
 .section-3__title {
   line-height: 1.15;
   font-size: 38px;
-  color: #333;
+  color: var(--text-primary);
   padding-bottom: 66px;
   font-weight: 450;
 }
 
 .section-3__name {
   font-weight: bold;
-  color: black;
+  color: var(--text-primary);
   font-size: 28px;
 }
 

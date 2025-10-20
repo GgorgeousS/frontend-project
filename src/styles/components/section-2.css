@@ -1,6 +1,6 @@
 .section-2 {
   display: flex;
-  background-color: white;
+  background-color: var(--bg-primary);
   justify-content: center;
   padding-bottom: 132px;
 }
@@ -10,7 +10,7 @@
   line-height: 1.25;
   padding-top: 122px;
   font-size: 48px;
-  color: black;
+  color: var(--text-primary);
 }
 
 .line {
@@ -31,12 +31,12 @@
 .line-title {
   font-size: 24px;
   font-weight: 700;
-  color: #333;
+  color: var(--text-h1);
   padding-bottom: 10px;
 }
 
 .line-description {
-  color: #666;
+  color: var(--text-disc);
   line-height: 1.6;
   font-size: 16px;
 }

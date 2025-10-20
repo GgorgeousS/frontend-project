@@ -30,3 +30,28 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   });
 });
+
+// Управление темами
+const themeToggle = document.getElementById('themeToggle');
+
+// Проверяем сохраненную тему или системную
+const savedTheme = localStorage.getItem('theme');
+const systemTheme = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+const currentTheme = savedTheme || systemTheme;
+
+// Применяем тему
+document.documentElement.setAttribute('data-theme', currentTheme);
+updateToggleButton(currentTheme);
+
+themeToggle.addEventListener('click', function () {
+  let theme = document.documentElement.getAttribute('data-theme');
+  theme = theme === 'light' ? 'dark' : 'light';
+
+  document.documentElement.setAttribute('data-theme', theme);
+  localStorage.setItem('theme', theme);
+  updateToggleButton(theme);
+});
+
+function updateToggleButton(theme) {
+  themeToggle.textContent = theme === 'light' ? '🌙 Dark' : '☀️ Light';
+}

@@ -1,5 +1,5 @@
 .section-cta {
-  background-color: #e7ebfc;
+  background-color: var(--card-color);
   text-align: center;
   padding-top: 115px;
   padding-bottom: 114px;
@@ -9,13 +9,13 @@
   font-weight: bold;
   line-height: 1.25;
   font-size: 48px;
-  color: black;
+  color: var(--text-h1);
   padding-bottom: 24px;
 }
 
 .section-cta p {
   font-size: 24px;
-  color: #000000;
+  color: var(--text-disc);
   line-height: 1.5;
 }
 

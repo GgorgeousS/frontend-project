@@ -7,7 +7,7 @@
 
 .page__header {
   flex-shrink: 0; /*запрещаем уменьшатся */
-  background-color: white;
+  background-color: var(--bg-primary);
 }
 .page__content {
   flex-grow: 1; /*займи все доступное пространство*/
@@ -15,4 +15,22 @@
 
 .page__footer {
   flex-shrink: 0; /*запрещаем уменьшатся*/
+}
+
+.theme-toggle {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  background: var(--btn-primary-bg);
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 20px;
+  cursor: pointer;
+  z-index: 1000;
+  font-size: 14px;
+}
+
+body {
+  background-color: var(--bg-primary);
 }

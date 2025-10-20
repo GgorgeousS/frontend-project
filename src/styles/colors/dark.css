@@ -1,6 +1,29 @@
-:root {
+:root[data-theme='dark'] {
   color-scheme: dark;
 
-  --color-primary: var(--color-black);
-  --color-secondary: var(--color-white);
+  --color-primary: var(--color-white);
+  --color-secondary: var(--color-black);
+
+  /* Основные тексты */
+  --text-primary: #ffffff;
+  --text-secondary: #b0b0b0;
+  --text-accent: #2e4fd7;
+  --text-h1: #ffffff;
+  --text-disc: #b5b5b5;
+
+  /* Компоненты */
+  --btn-primary-bg: #2e4fd7;
+  --btn-primary-hover: #1a3bb0;
+  --card-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+  --burger-color: #ffffff;
+  --overlay-bg: rgba(0, 0, 0, 0.7);
+  --card-color: #4f4f4f;
+  --card2-color: #414141;
+
+  color-scheme: dark;
+  --color-primary: var(--color-white);
+  --color-secondary: var(--color-black);
+  --bg-primary: #000000; /* Черный фон для темной темы */
+  /* остальные переменные */
+  --dg-cloud: #717171;
 }

@@ -14,3 +14,5 @@
 @import './styles/components/section-meet.css';
 @import './styles/components/section-cta.css';
 @import './styles/components/footer.css';
+@import './styles/colors/light.css';
+@import './styles/colors/dark.css';

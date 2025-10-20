@@ -22,13 +22,13 @@
   display: flex;
   width: 350px;
   height: 354px;
-  background-color: white;
+  background-color: var(--card2-color);
 }
 
 .card__info {
   max-width: 400px;
   width: 100%;
-  background-color: white;
+  background-color: var(--card2-color);
   border-radius: 20px;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
   padding: 40px 30px;
@@ -37,12 +37,12 @@
 .card__title {
   font-size: 20px;
   font-weight: 700;
-  color: #333;
+  color: var(--text-h1);
   margin-bottom: 20px;
 }
 
 .card__description {
-  color: #666;
+  color: var(--text-disc);
   line-height: 1.6;
   margin-bottom: 30px;
   font-size: 16px;

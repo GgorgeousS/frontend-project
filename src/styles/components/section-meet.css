@@ -1,5 +1,5 @@
 .section-meet {
-  background-color: white;
+  background-color: var(--bg-primary);
 }
 
 .section-meet__card {
@@ -13,7 +13,7 @@
   font-weight: bold;
   line-height: 1.25;
   font-size: 48px;
-  color: black;
+  color: var(--text-h1);
   padding-bottom: 60px;
   padding-top: 60px;
   text-align: center;
@@ -22,13 +22,13 @@
 .meet__block {
   width: 255px;
   height: 255px;
-  background-color: #e7ebfc;
+  background-color: var(--card-color);
 }
 
 .meet__name {
   font-size: 24px;
   font-weight: 700;
-  color: #333;
+  color: var(--text-h1);
   padding-bottom: 10px;
   line-height: 1;
   padding-top: 24px;
@@ -36,7 +36,7 @@
 
 .meet__post {
   line-height: 1;
-  color: #666;
+  color: var(--text-disc);
   font-size: 16px;
 }
 
