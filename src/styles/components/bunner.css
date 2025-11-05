@@ -21,6 +21,8 @@
   display: flex;
   justify-content: flex-start;
   padding-top: 36px;
+  align-items: center;
+  gap: 20px;
 }
 
 .bunner__profile__img {
@@ -47,11 +49,17 @@
   min-width: 262px;
   min-height: 56px;
   justify-content: center;
+  gap: 10px; /* Добавляем отступ между текстом и иконкой */
+  text-decoration: none; /* Если это ссылка */
+  color: white; /* Цвет текста */
+  border: none; /* Если это кнопка */
+  cursor: pointer;
 }
 
 .btn-icon {
   height: 10px;
-  margin: 7px;
+  width: auto; /* Добавляем для правильного пропорционирования */
+  margin: 0; /* Убираем старые отступы */
 }
 
 @media (width <= 1024px) {

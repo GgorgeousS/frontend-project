@@ -2,7 +2,7 @@
   background-color: var(--bg-primary);
 }
 
-.section-meet__card {
+.section-meet__row {
   display: flex;
   justify-content: center;
   padding-bottom: 132px;
@@ -10,7 +10,7 @@
   color: black;
 }
 
-.meet__title {
+.section-meet__title {
   font-weight: bold;
   line-height: 1.25;
   font-size: 48px;
@@ -18,112 +18,125 @@
   padding-bottom: 60px;
   padding-top: 60px;
   text-align: center;
+  margin: 0;
 }
 
-.meet__block {
+.section-meet__card {
+  display: flex;
+  flex-direction: column;
+}
+
+.section-meet__photo {
   width: 255px;
   height: 255px;
   background-color: var(--card-color);
 }
 
-.meet__name {
+.section-meet__info {
+  padding-top: 24px;
+}
+
+.section-meet__name {
   font-size: 24px;
   font-weight: 700;
   color: var(--text-h1);
   padding-bottom: 10px;
   line-height: 1;
-  padding-top: 24px;
+  margin: 0;
 }
 
-.meet__post {
+.section-meet__position {
   line-height: 1;
   color: var(--text-disc);
   font-size: 16px;
+  margin: 0;
 }
 
-.meet__ico {
+.section-meet__social {
   display: flex;
   justify-content: flex-start;
   gap: 8px;
   padding-top: 15px;
 }
 
+.section-meet__social-icon {
+  width: 24px;
+  height: 24px;
+  object-fit: contain;
+}
+
 /* Адаптация для планшетов */
 @media (width <= 1024px) {
-  .section-meet__card {
+  .section-meet__row {
     flex-wrap: wrap;
     padding-bottom: 100px;
     gap: 25px;
   }
 
-  .meet__title {
+  .section-meet__title {
     font-size: 42px;
     padding-bottom: 50px;
     padding-top: 50px;
   }
 
-  .meet__block {
+  .section-meet__photo {
     width: 220px;
     height: 220px;
   }
 
-  .meet__name {
+  .section-meet__name {
     font-size: 22px;
-    padding-top: 20px;
   }
 
-  .meet__post {
+  .section-meet__position {
     font-size: 15px;
   }
 }
 
 /* Адаптация для мобильных устройств */
 @media (width <= 768px) {
-  .section-meet__card {
+  .section-meet__row {
     flex-direction: column;
     align-items: center;
     padding-bottom: 80px;
     gap: 30px;
   }
 
-  .meet__title {
+  .section-meet__title {
     font-size: 36px;
     padding: 40px 20px;
   }
 
-  .meet__card {
-    display: flex;
-    flex-direction: column;
+  .section-meet__card {
     align-items: center;
     text-align: center;
   }
 
-  .meet__block {
+  .section-meet__photo {
     width: 200px;
     height: 200px;
   }
 
-  .meet__info {
+  .section-meet__info {
     display: flex;
     flex-direction: column;
     align-items: center;
   }
 
-  .meet__name {
+  .section-meet__name {
     font-size: 20px;
-    padding-top: 20px;
   }
 
-  .meet__post {
+  .section-meet__position {
     font-size: 14px;
   }
 
-  .meet__ico {
+  .section-meet__social {
     justify-content: center;
     padding-top: 12px;
   }
 
-  .meet__ico__img {
+  .section-meet__social-icon {
     width: 22px;
     height: 22px;
   }
@@ -131,36 +144,35 @@
 
 /* Адаптация для маленьких мобильных устройств */
 @media (width <= 480px) {
-  .section-meet__card {
+  .section-meet__row {
     padding-bottom: 60px;
     gap: 25px;
   }
 
-  .meet__title {
+  .section-meet__title {
     font-size: 28px;
     padding: 30px 15px;
   }
 
-  .meet__block {
+  .section-meet__photo {
     width: 180px;
     height: 180px;
   }
 
-  .meet__name {
+  .section-meet__name {
     font-size: 18px;
-    padding-top: 18px;
   }
 
-  .meet__post {
+  .section-meet__position {
     font-size: 13px;
   }
 
-  .meet__ico {
+  .section-meet__social {
     padding-top: 10px;
     gap: 6px;
   }
 
-  .meet__ico__img {
+  .section-meet__social-icon {
     width: 20px;
     height: 20px;
   }
@@ -168,37 +180,36 @@
 
 /* Адаптация для очень маленьких экранов */
 @media (width <= 360px) {
-  .section-meet__card {
+  .section-meet__row {
     padding-bottom: 50px;
     gap: 20px;
   }
 
-  .meet__title {
+  .section-meet__title {
     font-size: 24px;
     padding-bottom: 25px;
     padding-top: 25px;
   }
 
-  .meet__block {
+  .section-meet__photo {
     width: 160px;
     height: 160px;
   }
 
-  .meet__name {
+  .section-meet__name {
     font-size: 16px;
-    padding-top: 15px;
   }
 
-  .meet__post {
+  .section-meet__position {
     font-size: 12px;
   }
 
-  .meet__ico {
+  .section-meet__social {
     padding-top: 8px;
     gap: 5px;
   }
 
-  .meet__ico__img {
+  .section-meet__social-icon {
     width: 18px;
     height: 18px;
   }

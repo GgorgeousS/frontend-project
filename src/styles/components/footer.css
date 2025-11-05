@@ -1,88 +1,133 @@
 .page__footer {
   background-color: #052825;
+  color: white;
 }
 
-.footer {
+.page__footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.page__footer-content {
   display: flex;
   justify-content: space-between;
 }
 
-.footer__info {
+.page__footer-info {
   padding-top: 70px;
+  flex: 1;
 }
 
-.footer__info p {
-  padding-bottom: 10px;
-}
-
-.footer-title {
+.page__footer-title {
   font-weight: bold;
   font-size: 24px;
   padding-bottom: 33px;
+  margin: 0;
 }
 
-.footer-about {
+.page__footer-subtitle {
   font-size: 18px;
   padding-bottom: 6px;
+  margin: 0 0 10px 0;
 }
 
-.btn-footer {
+.page__footer-description {
+  padding-bottom: 20px;
+  margin: 0;
+  line-height: 1.5;
+}
+
+.page__footer-line {
+  display: block;
+}
+
+.page__footer-button {
   border: none;
   padding: 10px 0;
+  background: none;
+  color: inherit;
+  cursor: pointer;
+  font-family: inherit;
+  font-size: 16px;
+  transition: opacity 0.3s ease;
 }
 
-.footer__menu__info {
+.page__footer-button:hover {
+  opacity: 0.7;
+}
+
+.page__footer-menu {
+  padding-top: 70px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.page__footer-row {
   display: flex;
   gap: 28px;
-  padding: 20px;
   justify-content: flex-end;
 }
 
-.footer__menu {
-  padding-top: 70px;
+.page__footer-link {
+  color: white;
+  text-decoration: none;
+  transition: opacity 0.3s ease;
+  white-space: nowrap;
 }
 
-.footer__end {
+.page__footer-link:hover {
+  opacity: 0.7;
+}
+
+.page__footer-divider {
+  margin-top: 22px;
+  border: none;
+  border-top: 0.5px solid #09413b;
+}
+
+.page__footer-bottom {
   display: flex;
   justify-content: space-between;
   padding-top: 30px;
   padding-bottom: 44px;
 }
 
-hr {
-  margin-top: 22px;
-  border: none;
-  border-top: 0.5px solid #09413b;
+.page__footer-text {
+  margin: 0;
+  line-height: 1.5;
+}
+
+.page__footer-copyright {
+  margin: 0;
 }
 
 /* Адаптация для планшетов */
 @media (width <= 1024px) {
-  .footer {
+  .page__footer-content {
     flex-direction: column;
     gap: 40px;
   }
 
-  .footer__info {
+  .page__footer-info {
     padding-top: 50px;
     text-align: center;
   }
 
-  .footer__menu {
+  .page__footer-menu {
     padding-top: 0;
-    display: flex;
-    flex-direction: column;
     align-items: center;
-    gap: 30px;
+    gap: 25px;
   }
 
-  .footer__menu__info {
+  .page__footer-row {
     justify-content: center;
-    padding: 10px;
     gap: 20px;
     flex-wrap: wrap;
   }
 
-  .footer__end {
+  .page__footer-bottom {
     flex-direction: column;
     text-align: center;
     gap: 20px;
@@ -90,140 +135,146 @@ hr {
     padding-bottom: 35px;
   }
 
-  .footer__end p br {
-    display: none;
+  .page__footer-line {
+    display: inline;
   }
 }
 
 /* Адаптация для мобильных устройств */
 @media (width <= 768px) {
-  .footer__info {
+  .page__footer-info {
     padding-top: 40px;
     padding-left: 20px;
     padding-right: 20px;
   }
 
-  .footer-title {
+  .page__footer-title {
     font-size: 22px;
     padding-bottom: 25px;
   }
 
-  .footer-about {
+  .page__footer-subtitle {
     font-size: 16px;
   }
 
-  .footer__info p {
+  .page__footer-description {
     font-size: 14px;
   }
 
-  .btn-footer {
+  .page__footer-button {
     font-size: 14px;
     padding: 8px 0;
   }
 
-  .footer__menu {
+  .page__footer-menu {
     gap: 20px;
   }
 
-  .footer__menu__info {
-    flex-direction: column;
+  .page__footer-row {
     gap: 15px;
-    text-align: center;
-    padding: 5px;
   }
 
-  .footer__menu a {
+  .page__footer-link {
     font-size: 14px;
   }
 
-  .footer__end {
+  .page__footer-bottom {
     padding: 20px 20px 30px;
     gap: 15px;
   }
 
-  .footer__end p {
+  .page__footer-text,
+  .page__footer-copyright {
     font-size: 14px;
   }
 }
 
 /* Адаптация для маленьких мобильных устройств */
 @media (width <= 480px) {
-  .footer__info {
-    padding-top: 30px;
-    padding-left: 15px;
-    padding-right: 15px;
+  .page__footer-container {
+    padding: 0 15px;
   }
 
-  .footer-title {
+  .page__footer-info {
+    padding-top: 30px;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .page__footer-title {
     font-size: 20px;
     padding-bottom: 20px;
   }
 
-  .footer-about {
+  .page__footer-subtitle {
     font-size: 15px;
   }
 
-  .footer__info p {
+  .page__footer-description {
     font-size: 13px;
   }
 
-  .btn-footer {
+  .page__footer-button {
     font-size: 13px;
   }
 
-  .footer__menu {
+  .page__footer-menu {
     gap: 15px;
   }
 
-  .footer__menu__info {
+  .page__footer-row {
     gap: 12px;
+    justify-content: center;
   }
 
-  .footer__menu a {
+  .page__footer-link {
     font-size: 13px;
   }
 
-  .footer__end {
-    padding: 15px 15px 25px;
+  .page__footer-bottom {
+    padding: 15px 0 25px;
     gap: 12px;
   }
 
-  .footer__end p {
+  .page__footer-text,
+  .page__footer-copyright {
     font-size: 13px;
   }
 
-  hr {
+  .page__footer-divider {
     margin-top: 15px;
   }
 }
 
 /* Адаптация для очень маленьких экранов */
 @media (width <= 360px) {
-  .footer__info {
+  .page__footer-info {
     padding-top: 25px;
   }
 
-  .footer-title {
+  .page__footer-title {
     font-size: 18px;
   }
 
-  .footer-about {
+  .page__footer-subtitle {
     font-size: 14px;
   }
 
-  .footer__info p {
+  .page__footer-description,
+  .page__footer-text,
+  .page__footer-copyright {
     font-size: 12px;
   }
 
-  .btn-footer {
+  .page__footer-button {
     font-size: 12px;
   }
 
-  .footer__menu a {
+  .page__footer-link {
     font-size: 12px;
   }
 
-  .footer__end p {
-    font-size: 12px;
+  .page__footer-row {
+    gap: 10px;
   }
 }

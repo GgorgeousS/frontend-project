@@ -1,10 +1,32 @@
 .section-3 {
-  display: flex;
   background-color: var(--bg-primary);
+  padding-bottom: 180px;
+}
+
+.section-3__container {
+  display: flex;
+  align-items: center;
   justify-content: center;
-  padding-bottom: 128px;
-  gap: 30px;
-  padding-top: 84px;
+  gap: 40px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.section-3__img {
+  flex-shrink: 0;
+}
+
+.section-3__photo {
+  max-width: 400px;
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.section-3__info {
+  flex: 1;
+  max-width: 500px;
 }
 
 .section-3__title {
@@ -13,51 +35,77 @@
   color: var(--text-primary);
   padding-bottom: 66px;
   font-weight: 450;
+  margin: 0;
+}
+
+.section-3__logo {
+  max-width: 160px;
+  height: auto;
+  margin-bottom: 20px;
 }
 
 .section-3__name {
   font-weight: bold;
   color: var(--text-primary);
   font-size: 28px;
+  margin: 0 0 8px 0;
 }
 
-.section-3__description {
+.section-3__position {
   color: #666;
   line-height: 1.6;
-  margin-bottom: 30px;
   font-size: 16px;
+  margin: 0;
+}
+
+/* Стили для стрелок */
+.section-3__arrow {
+  background: none;
+  border: none;
+  cursor: pointer;
+  transition: opacity 0.3s ease;
+  flex-shrink: 0;
+  padding: 0;
+}
+
+.section-3__arrow-icon {
+  width: 40px;
+  height: 40px;
+}
+
+.section-3__arrow:hover {
+  opacity: 0.7;
 }
 
 /* Адаптация для планшетов */
 @media (width <= 1024px) {
   .section-3 {
-    padding-bottom: 100px;
-    padding-top: 60px;
+    padding: 60px 0 100px;
   }
 
-  .section-3 .container {
-    gap: 25px;
+  .section-3__container {
+    gap: 30px;
   }
 
   .section-3__title {
-    font-size: 28px;
+    font-size: 32px;
     padding-bottom: 40px;
     line-height: 1.2;
   }
 
   .section-3__name {
-    font-size: 22px;
+    font-size: 24px;
   }
 
-  .section-3__description {
+  .section-3__position {
     font-size: 15px;
   }
 
-  .section-3__img__img {
+  .section-3__photo {
     max-width: 350px;
   }
 
-  .section-3__info__img {
+  .section-3__logo {
     max-width: 140px;
   }
 }
@@ -65,43 +113,31 @@
 /* Адаптация для мобильных устройств */
 @media (width <= 768px) {
   .section-3 {
-    padding-bottom: 60px;
-    padding-top: 40px;
+    padding: 40px 0 60px;
   }
 
-  .section-3 .container {
+  .section-3__container {
     flex-direction: column;
     gap: 30px;
     text-align: center;
   }
 
   .section-3__title {
-    font-size: 16px;
+    font-size: 24px;
     padding-bottom: 30px;
     line-height: 1.3;
   }
 
-  .section-3__title br {
-    display: none;
-  }
-
   .section-3__name {
-    font-size: 18px;
+    font-size: 20px;
   }
 
-  .section-3__description {
+  .section-3__position {
     font-size: 14px;
   }
 
-  .section-3__img {
-    display: flex;
-    justify-content: center;
-    width: 100%;
-  }
-
-  .section-3__img__img {
+  .section-3__photo {
     max-width: 300px;
-    width: 100%;
   }
 
   .section-3__info {
@@ -111,13 +147,12 @@
     width: 100%;
   }
 
-  .section-3__info__img {
+  .section-3__logo {
     max-width: 120px;
   }
 
   /* Скрываем стрелки на мобильных */
-  .section-3 img[src*='left.svg'],
-  .section-3 img[src*='right.svg'] {
+  .section-3__arrow {
     display: none;
   }
 }
@@ -125,11 +160,10 @@
 /* Адаптация для маленьких мобильных устройств */
 @media (width <= 480px) {
   .section-3 {
-    padding-bottom: 50px;
-    padding-top: 30px;
+    padding: 30px 0 50px;
   }
 
-  .section-3 .container {
+  .section-3__container {
     gap: 25px;
     padding-left: 15px;
     padding-right: 15px;
@@ -142,18 +176,18 @@
   }
 
   .section-3__name {
-    font-size: 16px;
+    font-size: 18px;
   }
 
-  .section-3__description {
+  .section-3__position {
     font-size: 13px;
   }
 
-  .section-3__img__img {
+  .section-3__photo {
     max-width: 280px;
   }
 
-  .section-3__info__img {
+  .section-3__logo {
     max-width: 100px;
   }
 }
@@ -161,11 +195,10 @@
 /* Адаптация для очень маленьких экранов */
 @media (width <= 360px) {
   .section-3 {
-    padding-bottom: 40px;
-    padding-top: 20px;
+    padding: 20px 0 40px;
   }
 
-  .section-3 .container {
+  .section-3__container {
     gap: 20px;
   }
 
@@ -175,18 +208,18 @@
   }
 
   .section-3__name {
-    font-size: 15px;
+    font-size: 16px;
   }
 
-  .section-3__description {
+  .section-3__position {
     font-size: 12px;
   }
 
-  .section-3__img__img {
+  .section-3__photo {
     max-width: 250px;
   }
 
-  .section-3__info__img {
+  .section-3__logo {
     max-width: 90px;
   }
 }

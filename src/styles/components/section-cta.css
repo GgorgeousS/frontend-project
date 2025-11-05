@@ -5,30 +5,50 @@
   padding-bottom: 114px;
 }
 
-.section-cta h1 {
+.section-cta__title {
   font-weight: bold;
   line-height: 1.25;
   font-size: 48px;
   color: var(--text-h1);
   padding-bottom: 24px;
+  margin: 0;
 }
 
-.section-cta p {
+.section-cta__title-line {
+  display: block;
+}
+
+.section-cta__description {
   font-size: 24px;
   color: var(--text-disc);
   line-height: 1.5;
+  margin: 0;
 }
 
-.button-cta {
+.section-cta__description-line {
+  display: block;
+}
+
+.section-cta__button {
   display: flex;
   justify-content: center;
   padding-top: 57px;
 }
 
-.btn-cta {
+.section-cta__btn {
   text-align: center;
   padding: 15px 25px;
   background-color: #2e4fd7;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-family: inherit;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+.section-cta__btn:hover {
+  background-color: #1e3bb3;
 }
 
 /* Адаптация для планшетов */
@@ -38,25 +58,25 @@
     padding-bottom: 80px;
   }
 
-  .section-cta h1 {
+  .section-cta__title {
     font-size: 42px;
     padding-bottom: 20px;
     padding-left: 40px;
     padding-right: 40px;
   }
 
-  .section-cta p {
+  .section-cta__description {
     font-size: 22px;
     padding-left: 40px;
     padding-right: 40px;
     line-height: 1.4;
   }
 
-  .button-cta {
+  .section-cta__button {
     padding-top: 45px;
   }
 
-  .btn-cta {
+  .section-cta__btn {
     padding: 14px 22px;
     font-size: 15px;
   }
@@ -69,7 +89,7 @@
     padding-bottom: 60px;
   }
 
-  .section-cta h1 {
+  .section-cta__title {
     font-size: 32px;
     padding-bottom: 20px;
     padding-left: 30px;
@@ -77,26 +97,26 @@
     line-height: 1.3;
   }
 
-  .section-cta h1 br {
-    display: none;
+  .section-cta__title-line {
+    display: inline;
   }
 
-  .section-cta p {
+  .section-cta__description {
     font-size: 18px;
     padding-left: 30px;
     padding-right: 30px;
     line-height: 1.4;
   }
 
-  .section-cta p br {
-    display: none;
+  .section-cta__description-line {
+    display: inline;
   }
 
-  .button-cta {
+  .section-cta__button {
     padding-top: 35px;
   }
 
-  .btn-cta {
+  .section-cta__btn {
     padding: 12px 20px;
     font-size: 14px;
   }
@@ -109,7 +129,7 @@
     padding-bottom: 50px;
   }
 
-  .section-cta h1 {
+  .section-cta__title {
     font-size: 26px;
     padding-bottom: 15px;
     padding-left: 20px;
@@ -117,18 +137,18 @@
     line-height: 1.3;
   }
 
-  .section-cta p {
+  .section-cta__description {
     font-size: 16px;
     padding-left: 20px;
     padding-right: 20px;
     line-height: 1.4;
   }
 
-  .button-cta {
+  .section-cta__button {
     padding-top: 30px;
   }
 
-  .btn-cta {
+  .section-cta__btn {
     padding: 10px 18px;
     font-size: 13px;
   }
@@ -141,25 +161,25 @@
     padding-bottom: 40px;
   }
 
-  .section-cta h1 {
+  .section-cta__title {
     font-size: 22px;
     padding-bottom: 12px;
     padding-left: 15px;
     padding-right: 15px;
   }
 
-  .section-cta p {
+  .section-cta__description {
     font-size: 14px;
     padding-left: 15px;
     padding-right: 15px;
     line-height: 1.4;
   }
 
-  .button-cta {
+  .section-cta__button {
     padding-top: 25px;
   }
 
-  .btn-cta {
+  .section-cta__btn {
     padding: 8px 16px;
     font-size: 12px;
   }

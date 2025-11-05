@@ -22,23 +22,38 @@
         <div class="container">
           <div class="header">
             <div class="header__logo">
-              <img src="/images/logo.svg" alt="" />
-              <p>Tweakful</p>
+              <img class="header__logo-img" src="/images/logo.svg" alt="Tweakful" />
+              <p class="header__logo-text">Tweakful</p>
             </div>
-            <button class="burger" id="burger">
-              <span></span>
-              <span></span>
-              <span></span>
+
+            <button class="header__burger" id="burger">
+              <span class="header__burger-line"></span>
+              <span class="header__burger-line"></span>
+              <span class="header__burger-line"></span>
             </button>
+
             <ul class="header__menu" id="menu">
-              <li><a href="#" class="nav-link px-2">Home</a></li>
-              <li><a href="#" class="nav-link px-2">Features</a></li>
-              <li><a href="#" class="nav-link px-2">Pricing</a></li>
-              <li><a href="#" class="nav-link px-2">About Us</a></li>
-              <li><a href="#" class="nav-link px-2">Help</a></li>
-              <li><button type="button" class="btn">Book A Meeting →</button></li>
+              <li class="header__menu-item">
+                <a href="#" class="header__link">Home</a>
+              </li>
+              <li class="header__menu-item">
+                <a href="#" class="header__link">Features</a>
+              </li>
+              <li class="header__menu-item">
+                <a href="#" class="header__link">Pricing</a>
+              </li>
+              <li class="header__menu-item">
+                <a href="#" class="header__link">About Us</a>
+              </li>
+              <li class="header__menu-item">
+                <a href="#" class="header__link">Help</a>
+              </li>
+              <li class="header__menu-item">
+                <button type="button" class="header__button">Book A Meeting →</button>
+              </li>
             </ul>
-            <div class="menu-overlay" id="overlay"></div>
+
+            <div class="header__overlay" id="overlay"></div>
           </div>
         </div>
       </header>
@@ -59,8 +74,8 @@
                 </p>
               </div>
               <div class="bunner__profile">
-                <img class="bunner__profile__img" src="public/images/prof.png" alt="" />
-                <div class="bunner__profile__text">
+                <img class="bunner__profile-img" src="public/images/prof.png" alt="" />
+                <div class="bunner__profile-text">
                   <b>Jesica Kumari</b>
                   <p>CEO Of Acme Limited</p>
                 </div>
@@ -71,131 +86,144 @@
             </div>
           </div>
         </div>
+
         <div class="section-1 container">
           <h1 class="section-1__title">
             Solutions that connect you to <br />
             your Prospects & Clients
           </h1>
-          <div class="section-1__card">
-            <div class="card">
-              <div class="card__info">
-                <img class="card__logo" src="public/images/1.svg" alt="" />
-                <h2 class="card__title">Mobile Application</h2>
-                <p class="card__description">
+
+          <div class="section-1__cards">
+            <div class="section-1__card">
+              <div class="section-1__card-info">
+                <img class="section-1__card-logo" src="public/images/1.svg" alt="Mobile Application" />
+                <h2 class="section-1__card-title">Mobile Application</h2>
+                <p class="section-1__card-description">
                   Lorem ipsum dolor amet, consectetur adipiscing elit. Mattis et sed nam sem tellus erat.
                 </p>
-                <a href="#" class="explore-button">Explore →</a>
+                <a href="#" class="section-1__card-button">Explore →</a>
               </div>
             </div>
-            <div class="card">
-              <div class="card__info">
-                <img class="card__logo" src="public/images/2.svg" alt="" />
-                <h2 class="card__title">Web Application</h2>
-                <p class="card__description">
+
+            <div class="section-1__card">
+              <div class="section-1__card-info">
+                <img class="section-1__card-logo" src="public/images/2.svg" alt="Web Application" />
+                <h2 class="section-1__card-title">Web Application</h2>
+                <p class="section-1__card-description">
                   Lorem ipsum dolor amet, consectetur adipiscing elit. Mattis et sed nam sem tellus erat.
                 </p>
-                <a href="#" class="explore-button">Explore →</a>
+                <a href="#" class="section-1__card-button">Explore →</a>
               </div>
             </div>
-            <div class="card">
-              <div class="card__info">
-                <img class="card__logo" src="public/images/3.svg" alt="" />
-                <h2 class="card__title">User Interface Design</h2>
-                <p class="card__description">
+
+            <div class="section-1__card">
+              <div class="section-1__card-info">
+                <img class="section-1__card-logo" src="public/images/3.svg" alt="User Interface Design" />
+                <h2 class="section-1__card-title">User Interface Design</h2>
+                <p class="section-1__card-description">
                   Lorem ipsum dolor amet, consectetur adipiscing elit. Mattis et sed nam sem tellus erat.
                 </p>
-                <a href="#" class="explore-button">Explore →</a>
-              </div>
-            </div>
-          </div>
-          <div class="section-1__card">
-            <div class="card">
-              <div class="card__info">
-                <img class="card__logo" src="public/images/4.svg" alt="" />
-                <h2 class="card__title">Strategy and Branding</h2>
-                <p class="card__description">
-                  Lorem ipsum dolor amet, consectetur adipiscing elit. Mattis et sed nam sem tellus erat.
-                </p>
-                <a href="#" class="explore-button">Explore →</a>
-              </div>
-            </div>
-            <div class="card">
-              <div class="card__info">
-                <img class="card__logo" src="public/images/5.svg" alt="" />
-                <h2 class="card__title">Performance Marketing</h2>
-                <p class="card__description">
-                  Lorem ipsum dolor amet, consectetur adipiscing elit. Mattis et sed nam sem tellus erat.
-                </p>
-                <a href="#" class="explore-button">Explore →</a>
-              </div>
-            </div>
-            <div class="card">
-              <div class="card__info">
-                <img class="card__logo" src="public/images/6.svg" alt="" />
-                <h2 class="card__title">Project Management</h2>
-                <p class="card__description">
-                  Lorem ipsum dolor amet, consectetur adipiscing elit. Mattis et sed nam sem tellus erat.
-                </p>
-                <a href="#" class="explore-button">Explore →</a>
+                <a href="#" class="section-1__card-button">Explore →</a>
               </div>
             </div>
           </div>
-          <div class="btn-section">
-            <button class="section-1__btn">Button Text →</button>
+
+          <div class="section-1__cards">
+            <div class="section-1__card">
+              <div class="section-1__card-info">
+                <img class="section-1__card-logo" src="public/images/4.svg" alt="Strategy and Branding" />
+                <h2 class="section-1__card-title">Strategy and Branding</h2>
+                <p class="section-1__card-description">
+                  Lorem ipsum dolor amet, consectetur adipiscing elit. Mattis et sed nam sem tellus erat.
+                </p>
+                <a href="#" class="section-1__card-button">Explore →</a>
+              </div>
+            </div>
+
+            <div class="section-1__card">
+              <div class="section-1__card-info">
+                <img class="section-1__card-logo" src="public/images/5.svg" alt="Performance Marketing" />
+                <h2 class="section-1__card-title">Performance Marketing</h2>
+                <p class="section-1__card-description">
+                  Lorem ipsum dolor amet, consectetur adipiscing elit. Mattis et sed nam sem tellus erat.
+                </p>
+                <a href="#" class="section-1__card-button">Explore →</a>
+              </div>
+            </div>
+
+            <div class="section-1__card">
+              <div class="section-1__card-info">
+                <img class="section-1__card-logo" src="public/images/6.svg" alt="Project Management" />
+                <h2 class="section-1__card-title">Project Management</h2>
+                <p class="section-1__card-description">
+                  Lorem ipsum dolor amet, consectetur adipiscing elit. Mattis et sed nam sem tellus erat.
+                </p>
+                <a href="#" class="section-1__card-button">Explore →</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="section-1__button-area">
+            <button class="section-1__button">Button Text →</button>
           </div>
         </div>
+
         <div class="section-2">
           <div class="container">
-            <div>
-              <h1>Benefits of working with us</h1>
-              <div class="section-2__line">
-                <div class="line">
-                  <div class="section-2__line__img">
-                    <img src="public/images/11.svg" alt="" />
+            <div class="section-2__content">
+              <h1 class="section-2__title">Benefits of working with us</h1>
+
+              <div class="section-2__row">
+                <div class="section-2__item">
+                  <div class="section-2__item-img">
+                    <img class="section-2__item-icon" src="public/images/11.svg" alt="Time zones" />
                   </div>
-                  <div class="section-2__line__info">
-                    <h2 class="line-title">Time zones ain't no thing</h2>
-                    <p class="line-description">
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br />
-                      Mattis et sed nam sem tellus erat.
+                  <div class="section-2__item-info">
+                    <h2 class="section-2__item-title">Time zones ain't no thing</h2>
+                    <p class="section-2__item-description">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                      <span class="section-2__item-line">Mattis et sed nam sem tellus erat.</span>
                     </p>
                   </div>
                 </div>
-                <div class="line">
-                  <div class="section-2__line__img">
-                    <img src="public/images/22.svg" alt="" />
+
+                <div class="section-2__item">
+                  <div class="section-2__item-img">
+                    <img class="section-2__item-icon" src="public/images/22.svg" alt="Full spectrum" />
                   </div>
-                  <div class="section-2__line__info">
-                    <h2 class="line-title">Full spectrum of services</h2>
-                    <p class="line-description">
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br />
-                      Mattis et sed nam sem tellus erat.
+                  <div class="section-2__item-info">
+                    <h2 class="section-2__item-title">Full spectrum of services</h2>
+                    <p class="section-2__item-description">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                      <span class="section-2__item-line">Mattis et sed nam sem tellus erat.</span>
                     </p>
                   </div>
                 </div>
               </div>
-              <div class="section-2__line">
-                <div class="line">
-                  <div class="section-2__line__img">
-                    <img src="public/images/33.svg" alt="" />
+
+              <div class="section-2__row">
+                <div class="section-2__item">
+                  <div class="section-2__item-img">
+                    <img class="section-2__item-icon" src="public/images/33.svg" alt="Impossible tasks" />
                   </div>
-                  <div class="section-2__line__info">
-                    <h2 class="line-title">Impossible? We're on it</h2>
-                    <p class="line-description">
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br />
-                      Mattis et sed nam sem tellus erat.
+                  <div class="section-2__item-info">
+                    <h2 class="section-2__item-title">Impossible? We're on it</h2>
+                    <p class="section-2__item-description">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                      <span class="section-2__item-line">Mattis et sed nam sem tellus erat.</span>
                     </p>
                   </div>
                 </div>
-                <div class="line">
-                  <div class="section-2__line__img">
-                    <img src="public/images/44.svg" alt="" />
+
+                <div class="section-2__item">
+                  <div class="section-2__item-img">
+                    <img class="section-2__item-icon" src="public/images/44.svg" alt="Flexible work" />
                   </div>
-                  <div class="section-2__line__info">
-                    <h2 class="line-title">Flexible work terms</h2>
-                    <p class="line-description">
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br />
-                      Mattis et sed nam sem tellus erat.
+                  <div class="section-2__item-info">
+                    <h2 class="section-2__item-title">Flexible work terms</h2>
+                    <p class="section-2__item-description">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                      <span class="section-2__item-line">Mattis et sed nam sem tellus erat.</span>
                     </p>
                   </div>
                 </div>
@@ -203,12 +231,17 @@
             </div>
           </div>
         </div>
+
         <div class="section-3">
-          <div class="section-3 container">
-            <img src="public/images/left.svg" alt="" />
+          <div class="section-3__container container">
+            <button class="section-3__arrow section-3__arrow--prev">
+              <img class="section-3__arrow-icon" src="public/images/left.svg" alt="Previous" />
+            </button>
+
             <div class="section-3__img">
-              <img class="section-3__img__img" src="public/images/Rectangle.svg" alt="" />
+              <img class="section-3__photo" src="public/images/Rectangle.svg" alt="Person" />
             </div>
+
             <div class="section-3__info">
               <h2 class="section-3__title">
                 There are smart delivery<br />
@@ -217,195 +250,213 @@
                 realized in cold and warm<br />
                 colors with sky.
               </h2>
-              <img class="section-3__info__img" src="public/images/logitech.svg" alt="" />
+              <img class="section-3__logo" src="public/images/logitech.svg" alt="Logitech" />
               <p class="section-3__name">David Gillroy</p>
-              <p class="section-3__description">Digital Artist at Digital Group</p>
+              <p class="section-3__position">Digital Artist at Digital Group</p>
             </div>
-            <img src="public/images/right.svg" alt="" />
+
+            <button class="section-3__arrow section-3__arrow--next">
+              <img class="section-3__arrow-icon" src="public/images/right.svg" alt="Next" />
+            </button>
           </div>
         </div>
+
         <div class="section-cloud">
-          <div class="section-cloud container">
-            <div class="section-cloud__info">
-              <h1 class="cloud__title">1,500+</h1>
-              <p class="cloud__discription">
-                Customers who have used Tweakful<br />
-                engagement design approach
-              </p>
-            </div>
-            <div class="section-cloud__logo">
-              <div class="cloud__logo">
-                <img class="section-cloud__img" src="public/images/Airbnb.svg" alt="" />
-                <img class="section-cloud__img" src="public/images/Amazon.svg" alt="" />
-                <img class="section-cloud__img" src="public/images/FedEx.svg" alt="" />
-                <img class="section-cloud__img" src="public/images/Microsoft.svg" alt="" />
-              </div>
-              <div class="cloud__logo">
-                <img class="section-cloud__img" src="public/images/Google.svg" alt="" />
-                <img class="section-cloud__img" src="public/images/ola.svg" alt="" />
-                <img class="section-cloud__img" src="public/images/Walmart.svg" alt="" />
-                <img class="section-cloud__img" src="public/images/OYO.svg" alt="" />
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="section-meet">
-          <h1 class="meet__title">Meet Our Teammates</h1>
-          <div class="section-meet__card">
-            <div class="meet__card">
-              <div class="meet__block"></div>
-              <div class="meet__info">
-                <h2 class="meet__name">Samuel Willson</h2>
-                <p class="meet__post">Digital Artist</p>
-                <div class="meet__ico">
-                  <img class="meet__ico__img" src="public/images/in.svg" alt="" />
-                  <img class="meet__ico__img" src="public/images/g.svg" alt="" />
-                  <img class="meet__ico__img" src="public/images/twit.png" alt="" />
-                </div>
-              </div>
-            </div>
-            <div class="meet__card">
-              <div class="meet__block"></div>
-              <div class="meet__info">
-                <h2 class="meet__name">Angelina Hellhop</h2>
-                <p class="meet__post">Digital Artist</p>
-                <div class="meet__ico">
-                  <img class="meet__ico__img" src="public/images/in.svg" alt="" />
-                  <img class="meet__ico__img" src="public/images/g.svg" alt="" />
-                  <img class="meet__ico__img" src="public/images/twit.png" alt="" />
-                </div>
-              </div>
-            </div>
-            <div class="meet__card">
-              <div class="meet__block"></div>
-              <div class="meet__info">
-                <h2 class="meet__name">Kyle Generale</h2>
-                <p class="meet__post">Digital Artist</p>
-                <div class="meet__ico">
-                  <img class="meet__ico__img" src="public/images/in.svg" alt="" />
-                  <img class="meet__ico__img" src="public/images/g.svg" alt="" />
-                  <img class="meet__ico__img" src="public/images/twit.png" alt="" />
-                </div>
-              </div>
-            </div>
-            <div class="meet__card">
-              <div class="meet__block"></div>
-              <div class="meet__info">
-                <h2 class="meet__name">Joey Taylor</h2>
-                <p class="meet__post">Digital Artist</p>
-                <div class="meet__ico">
-                  <img class="meet__ico__img" src="public/images/in.svg" alt="" />
-                  <img class="meet__ico__img" src="public/images/g.svg" alt="" />
-                  <img class="meet__ico__img" src="public/images/twit.png" alt="" />
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="section-meet__card">
-            <div class="meet__card">
-              <div class="meet__block"></div>
-              <div class="meet__info">
-                <h2 class="meet__name">Samuel Willson</h2>
-                <p class="meet__post">Digital Artist</p>
-                <div class="meet__ico">
-                  <img class="meet__ico__img" src="public/images/in.svg" alt="" />
-                  <img class="meet__ico__img" src="public/images/g.svg" alt="" />
-                  <img class="meet__ico__img" src="public/images/twit.png" alt="" />
-                </div>
-              </div>
-            </div>
-            <div class="meet__card">
-              <div class="meet__block"></div>
-              <div class="meet__info">
-                <h2 class="meet__name">Angelina Hellhop</h2>
-                <p class="meet__post">Digital Artist</p>
-                <div class="meet__ico">
-                  <img class="meet__ico__img" src="public/images/in.svg" alt="" />
-                  <img class="meet__ico__img" src="public/images/g.svg" alt="" />
-                  <img class="meet__ico__img" src="public/images/twit.png" alt="" />
-                </div>
-              </div>
-            </div>
-            <div class="meet__card">
-              <div class="meet__block"></div>
-              <div class="meet__info">
-                <h2 class="meet__name">Kyle Generale</h2>
-                <p class="meet__post">Digital Artist</p>
-                <div class="meet__ico">
-                  <img class="meet__ico__img" src="public/images/in.svg" alt="" />
-                  <img class="meet__ico__img" src="public/images/g.svg" alt="" />
-                  <img class="meet__ico__img" src="public/images/twit.png" alt="" />
-                </div>
-              </div>
-            </div>
-            <div class="meet__card">
-              <div class="meet__block"></div>
-              <div class="meet__info">
-                <h2 class="meet__name">Joey Taylor</h2>
-                <p class="meet__post">Digital Artist</p>
-                <div class="meet__ico">
-                  <img class="meet__ico__img" src="public/images/in.svg" alt="" />
-                  <img class="meet__ico__img" src="public/images/g.svg" alt="" />
-                  <img class="meet__ico__img" src="public/images/twit.png" alt="" />
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="section-cta">
-          <h1>
-            The Is Closing Headline To Make A <br />
-            Impact For Call To Action
-          </h1>
-          <p>
-            Nowadays, it isn't uncommon to see lenders rapidly adopting a digital lending strategy to<br />
-            streamline the lending process nowadays, it isn't uncommon to see lenders rapidly
-          </p>
-          <div class="button-cta">
-            <button class="btn-cta">Book A Meeting →</button>
-          </div>
-        </div>
-        <div class="page__footer">
-          <div class="container">
-            <div class="footer">
-              <div class="footer__info">
-                <p class="footer-title">Tweakful</p>
-                <p class="footer-about">About Tweakful</p>
-                <p>
-                  Tweakful is HubSpot Theme Based On Engagement<br />
-                  Design Framework, designed & developed by Openthrive.
+          <div class="section-cloud__container container">
+            <div class="section-cloud__content">
+              <div class="section-cloud__info">
+                <h1 class="section-cloud__title">1,500+</h1>
+                <p class="section-cloud__description">
+                  Customers who have used Tweakful
+                  <span class="section-cloud__description-line">engagement design approach</span>
                 </p>
-                <button class="btn-footer">Button Text →</button>
               </div>
-              <div class="footer__menu">
-                <div class="footer__menu__info">
-                  <a href="#" class="nav-link px-2">Contact</a>
-                  <a href="#" class="nav-link px-2">Career</a>
-                  <a href="#" class="nav-link px-2">Privacy Plocy</a>
-                  <a href="#" class="nav-link px-2">Terms Of Services</a>
-                  <a href="#" class="nav-link px-2">GDPR</a>
-                  <a href="#" class="nav-link px-2">FAQs</a>
+              <div class="section-cloud__logos">
+                <div class="section-cloud__row">
+                  <img class="section-cloud__logo" src="public/images/Airbnb.svg" alt="Airbnb" />
+                  <img class="section-cloud__logo" src="public/images/Amazon.svg" alt="Amazon" />
+                  <img class="section-cloud__logo" src="public/images/FedEx.svg" alt="FedEx" />
+                  <img class="section-cloud__logo" src="public/images/Microsoft.svg" alt="Microsoft" />
                 </div>
-                <div class="footer__menu__info">
-                  <a href="#" class="nav-link px-2">Blog</a>
-                  <a href="#" class="nav-link px-2">Capabilities</a>
-                  <a href="#" class="nav-link px-2">Resources</a>
-                  <a href="#" class="nav-link px-2">Partnership Integration</a>
+                <div class="section-cloud__row">
+                  <img class="section-cloud__logo" src="public/images/Google.svg" alt="Google" />
+                  <img class="section-cloud__logo" src="public/images/ola.svg" alt="Ola" />
+                  <img class="section-cloud__logo" src="public/images/Walmart.svg" alt="Walmart" />
+                  <img class="section-cloud__logo" src="public/images/OYO.svg" alt="OYO" />
                 </div>
               </div>
             </div>
-            <hr class="hr-footer" />
-            <div class="footer__end">
-              <p>
-                B2B website and engagement design solution that transform<br />
-                marketing and sales performance like never before.
+          </div>
+        </div>
+
+        <div class="section-meet">
+          <h1 class="section-meet__title">Meet Our Teammates</h1>
+
+          <div class="section-meet__row">
+            <div class="section-meet__card">
+              <div class="section-meet__photo"></div>
+              <div class="section-meet__info">
+                <h2 class="section-meet__name">Samuel Willson</h2>
+                <p class="section-meet__position">Digital Artist</p>
+                <div class="section-meet__social">
+                  <img class="section-meet__social-icon" src="public/images/in.svg" alt="LinkedIn" />
+                  <img class="section-meet__social-icon" src="public/images/g.svg" alt="GitHub" />
+                  <img class="section-meet__social-icon" src="public/images/twit.png" alt="Twitter" />
+                </div>
+              </div>
+            </div>
+
+            <div class="section-meet__card">
+              <div class="section-meet__photo"></div>
+              <div class="section-meet__info">
+                <h2 class="section-meet__name">Angelina Hellhop</h2>
+                <p class="section-meet__position">Digital Artist</p>
+                <div class="section-meet__social">
+                  <img class="section-meet__social-icon" src="public/images/in.svg" alt="LinkedIn" />
+                  <img class="section-meet__social-icon" src="public/images/g.svg" alt="GitHub" />
+                  <img class="section-meet__social-icon" src="public/images/twit.png" alt="Twitter" />
+                </div>
+              </div>
+            </div>
+
+            <div class="section-meet__card">
+              <div class="section-meet__photo"></div>
+              <div class="section-meet__info">
+                <h2 class="section-meet__name">Kyle Generale</h2>
+                <p class="section-meet__position">Digital Artist</p>
+                <div class="section-meet__social">
+                  <img class="section-meet__social-icon" src="public/images/in.svg" alt="LinkedIn" />
+                  <img class="section-meet__social-icon" src="public/images/g.svg" alt="GitHub" />
+                  <img class="section-meet__social-icon" src="public/images/twit.png" alt="Twitter" />
+                </div>
+              </div>
+            </div>
+
+            <div class="section-meet__card">
+              <div class="section-meet__photo"></div>
+              <div class="section-meet__info">
+                <h2 class="section-meet__name">Joey Taylor</h2>
+                <p class="section-meet__position">Digital Artist</p>
+                <div class="section-meet__social">
+                  <img class="section-meet__social-icon" src="public/images/in.svg" alt="LinkedIn" />
+                  <img class="section-meet__social-icon" src="public/images/g.svg" alt="GitHub" />
+                  <img class="section-meet__social-icon" src="public/images/twit.png" alt="Twitter" />
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="section-meet__row">
+            <div class="section-meet__card">
+              <div class="section-meet__photo"></div>
+              <div class="section-meet__info">
+                <h2 class="section-meet__name">Samuel Willson</h2>
+                <p class="section-meet__position">Digital Artist</p>
+                <div class="section-meet__social">
+                  <img class="section-meet__social-icon" src="public/images/in.svg" alt="LinkedIn" />
+                  <img class="section-meet__social-icon" src="public/images/g.svg" alt="GitHub" />
+                  <img class="section-meet__social-icon" src="public/images/twit.png" alt="Twitter" />
+                </div>
+              </div>
+            </div>
+
+            <div class="section-meet__card">
+              <div class="section-meet__photo"></div>
+              <div class="section-meet__info">
+                <h2 class="section-meet__name">Angelina Hellhop</h2>
+                <p class="section-meet__position">Digital Artist</p>
+                <div class="section-meet__social">
+                  <img class="section-meet__social-icon" src="public/images/in.svg" alt="LinkedIn" />
+                  <img class="section-meet__social-icon" src="public/images/g.svg" alt="GitHub" />
+                  <img class="section-meet__social-icon" src="public/images/twit.png" alt="Twitter" />
+                </div>
+              </div>
+            </div>
+
+            <div class="section-meet__card">
+              <div class="section-meet__photo"></div>
+              <div class="section-meet__info">
+                <h2 class="section-meet__name">Kyle Generale</h2>
+                <p class="section-meet__position">Digital Artist</p>
+                <div class="section-meet__social">
+                  <img class="section-meet__social-icon" src="public/images/in.svg" alt="LinkedIn" />
+                  <img class="section-meet__social-icon" src="public/images/g.svg" alt="GitHub" />
+                  <img class="section-meet__social-icon" src="public/images/twit.png" alt="Twitter" />
+                </div>
+              </div>
+            </div>
+
+            <div class="section-meet__card">
+              <div class="section-meet__photo"></div>
+              <div class="section-meet__info">
+                <h2 class="section-meet__name">Joey Taylor</h2>
+                <p class="section-meet__position">Digital Artist</p>
+                <div class="section-meet__social">
+                  <img class="section-meet__social-icon" src="public/images/in.svg" alt="LinkedIn" />
+                  <img class="section-meet__social-icon" src="public/images/g.svg" alt="GitHub" />
+                  <img class="section-meet__social-icon" src="public/images/twit.png" alt="Twitter" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="section-cta">
+          <h1 class="section-cta__title">
+            The Is Closing Headline To Make A
+            <span class="section-cta__title-line">Impact For Call To Action</span>
+          </h1>
+          <p class="section-cta__description">
+            Nowadays, it isn't uncommon to see lenders rapidly adopting a digital lending strategy to
+            <span class="section-cta__description-line"
+              >streamline the lending process nowadays, it isn't uncommon to see lenders rapidly</span
+            >
+          </p>
+          <div class="section-cta__button">
+            <button class="section-cta__btn">Book A Meeting →</button>
+          </div>
+        </div>
+
+        <div class="page__footer">
+          <div class="page__footer-container container">
+            <div class="page__footer-content">
+              <div class="page__footer-info">
+                <p class="page__footer-title">Tweakful</p>
+                <p class="page__footer-subtitle">About Tweakful</p>
+                <p class="page__footer-description">
+                  Tweakful is HubSpot Theme Based On Engagement
+                  <span class="page__footer-line">Design Framework, designed & developed by Openthrive.</span>
+                </p>
+                <button class="page__footer-button">Button Text →</button>
+              </div>
+              <div class="page__footer-menu">
+                <div class="page__footer-row">
+                  <a href="#" class="page__footer-link">Contact</a>
+                  <a href="#" class="page__footer-link">Career</a>
+                  <a href="#" class="page__footer-link">Privacy Plocy</a>
+                  <a href="#" class="page__footer-link">Terms Of Services</a>
+                  <a href="#" class="page__footer-link">GDPR</a>
+                  <a href="#" class="page__footer-link">FAQs</a>
+                </div>
+                <div class="page__footer-row">
+                  <a href="#" class="page__footer-link">Blog</a>
+                  <a href="#" class="page__footer-link">Capabilities</a>
+                  <a href="#" class="page__footer-link">Resources</a>
+                  <a href="#" class="page__footer-link">Partnership Integration</a>
+                </div>
+              </div>
+            </div>
+            <hr class="page__footer-divider" />
+            <div class="page__footer-bottom">
+              <p class="page__footer-text">
+                B2B website and engagement design solution that transform
+                <span class="page__footer-line">marketing and sales performance like never before.</span>
               </p>
-              <p>© 2015-2020 Openthrive. All right reserved.</p>
+              <p class="page__footer-copyright">© 2015-2020 Openthrive. All right reserved.</p>
             </div>
           </div>
         </div>
       </main>
-      <footer class="page__footer"></footer>
     </div>
     <script type="module" src="/src/index.js"></script>
   </body>
